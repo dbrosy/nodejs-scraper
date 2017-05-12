@@ -18,7 +18,7 @@ var jsdom = require('jsdom').jsdom
   ;
 */
 
-vare jquery = require('jquery');
+var jquery = require('jquery');
 
 var query = {
     url: 'http://google.com/search?q=javascript',
