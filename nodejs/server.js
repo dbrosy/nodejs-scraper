@@ -2,8 +2,7 @@
 
 const express = require('express');
 const noodle = require('noodlejs');
-const jquery = require('jquery');
-const jsdom = require('jsdom');
+
 
 // Constants
 const PORT = 8080;
@@ -18,6 +17,9 @@ var jsdom = require('jsdom').jsdom
   , jquery = require('jquery').create(myWindow)
   ;
 */
+
+vare jquery = require('jquery');
+
 var query = {
     url: 'http://google.com/search?q=javascript',
     type: 'html',
@@ -29,6 +31,7 @@ var query = {
              uriQuery + '&callback=?';
 
 // Make Ajax request to Noodle server
+var js = jquery.Create(myWindow);
 jquery.getJSON(request, function (data) {
   alert(data[0].results);
 });
