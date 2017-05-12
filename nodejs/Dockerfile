@@ -8,7 +8,7 @@ COPY package.json /usr/src/app/
 RUN npm install
 RUN npm install noodlejs
 RUN npm install jQuery
-
+RUN npm install jsdom
 
 
 # Bundle app source
