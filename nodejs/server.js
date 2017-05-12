@@ -3,6 +3,7 @@
 const express = require('express');
 const noodle = require('noodlejs');
 
+global.jQuery = require('jquery');
 
 // Constants
 const PORT = 8080;
