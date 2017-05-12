@@ -2,21 +2,22 @@
 
 const express = require('express');
 const noodle = require('noodlejs');
-//const jQuery = require('jquery');
+const jquery = require('jquery');
+const jsdom = require('jsdom');
 
 // Constants
 const PORT = 8080;
 
 // App
 const app = express();
-
+/*
 var jsdom = require('jsdom').jsdom
   , myWindow = jsdom().createWindow()
   , $ = require('jQuery')
   , jq = require('jQuery').create()
   , jquery = require('jquery').create(myWindow)
   ;
-
+*/
 var query = {
     url: 'http://google.com/search?q=javascript',
     type: 'html',
