@@ -31,7 +31,7 @@ var query = {
              uriQuery + '&callback=?';
 
 // Make Ajax request to Noodle server
-var js = jquery.Create(myWindow);
+//var js = jquery.Create(myWindow);
 jquery.getJSON(request, function (data) {
   alert(data[0].results);
 });
