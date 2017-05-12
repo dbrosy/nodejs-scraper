@@ -14,7 +14,7 @@ var jsdom = require('jsdom').jsdom
   , myWindow = jsdom().createWindow()
   , $ = require('jQuery')
   , jq = require('jQuery').create()
-  , jQuery = require('jQuery').create(myWindow)
+  , jquery = require('jquery').create(myWindow)
   ;
 
 var query = {
@@ -28,7 +28,7 @@ var query = {
              uriQuery + '&callback=?';
 
 // Make Ajax request to Noodle server
-jQuery.getJSON(request, function (data) {
+jquery.getJSON(request, function (data) {
   alert(data[0].results);
 });
 
