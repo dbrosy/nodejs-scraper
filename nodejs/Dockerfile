@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 COPY package.json /usr/src/app/
 RUN npm install
 RUN npm install noodlejs
-RUN npm install jQuery
+RUN npm install jquery
 RUN npm install jsdom
 
 
